@@ -1,0 +1,45 @@
+.app-header {
+  background-color: $clr6;
+  // height: 250px;
+  font-family: Livvic;
+  width: 100%;
+  // margin-bottom: 50px;
+  position: sticky;
+  z-index: 40;
+  top: 0;
+  .app-logo {
+    margin-right: 40px;
+    font-size: 48px;
+    flex-grow: 1;
+    h1 {
+      cursor: pointer;
+    }
+  }
+
+  .left-header {
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .header-links {
+    z-index: 500;
+  }
+  a {
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: 24px;
+
+    &:hover {
+      color: $clr5;
+    }
+  }
+  button {
+    width: 153px;
+    height: 48px;
+    border-radius: 33px;
+    font-family: Livvic-Bold;
+    border-color: $clr2;
+    color: $clr2;
+    background-color: transparent;
+  }
+}

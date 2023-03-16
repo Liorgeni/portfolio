@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+// ::selection {
+// }
+
+html {
+  font-family: Livvic-Bold;
+  // color: $clr2;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-size: rem(16px);
+  margin: 0;
+  margin: auto;
+  background-color: $clr1;
+  color: $clr9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
