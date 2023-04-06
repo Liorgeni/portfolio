@@ -1,4 +1,4 @@
-export function AppHeader() {
+export function AppHeader({ toggleMenu }) {
   function scrollToSection(section) {
     let scrollOffsetY;
     switch (section) {
@@ -29,12 +29,23 @@ export function AppHeader() {
           <div className="app-logo flex">
             <h1 onClick={() => scrollToSection("header")}>Lior Geni</h1>
           </div>
-          <div className="header-links flex">
-            <a onClick={() => scrollToSection("portfolio")}>Portfolio</a>
-            <a onClick={() => scrollToSection("cv")}>CV</a>
-            <a onClick={() => scrollToSection("bottom")}>About</a>
-            <a onClick={() => scrollToSection("bottom")}>Contact me</a>
-          </div>
+          <ul className="header-links flex clean-list">
+            <li>
+              <a onClick={() => scrollToSection("portfolio")}>Portfolio</a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection("cv")}>CV</a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection("bottom")}>About</a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection("bottom")}>Contact me</a>
+            </li>
+          </ul>
+          <button className="menu-toggle-btn" onClick={toggleMenu}>
+            ☰
+          </button>
         </section>
       </nav>
     </header>

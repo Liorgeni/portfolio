@@ -1,7 +1,7 @@
-import logo from "../assets/img/logo.svg";
 import facebook from "../assets/img/icon-facebook.svg";
 import instagram from "../assets/img/icon-instagram.svg";
 import linkedin from "../assets/img/icon-linkedin.svg";
+import gmail from "../assets/img/icon-gmail.svg";
 
 export function AppFooter() {
   return (
@@ -21,6 +21,12 @@ export function AppFooter() {
           <a href="https://www.facebook.com/liorgeni/" target="_blank">
             <img src={facebook} alt="facebook" />
           </a>
+          {/* <a
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=liorgeni@gmail.com"
+            target="_blank"
+          >
+            <img src={gmail} alt="facebook" />
+          </a> */}
         </div>
         <p>Copyrights 2023. All Rights Reserved.</p>
       </div>

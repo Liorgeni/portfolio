@@ -5,11 +5,18 @@ import touchnums from "../assets/img/touchnums.png";
 import pacman from "../assets/img/pacman.png";
 import memegen from "../assets/img/memegen.png";
 import mario from "../assets/img/superMario.png";
+import github from "../assets/img/icon-github.svg";
 
 export function Portfolio() {
   return (
     <section className="portfolio main-layout full">
-      <h1>Portfolio</h1>
+      <div className="portfolio-header flex">
+        <h1>Portfolio</h1>
+        <a href=" https://github.com/Liorgeni/" target="_blank">
+          <img src={github} />
+        </a>
+      </div>
+
       <section className="portfolio-grid">
         <a href="https://gigxerr.onrender.com/?title=&tags=" target="_blank">
           <article className="portfolio-item flex column">
@@ -55,7 +62,7 @@ export function Portfolio() {
                     engaging game that inspired by the original Super Mario game
                     while leveraging the capabilities of the modern web.
                   </p>
-                  <p>Created: March 2023</p>
+                  <p>Created: March 2023(In progress)</p>
                 </div>
               </div>
             </div>

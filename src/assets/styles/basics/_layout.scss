@@ -17,17 +17,13 @@
 @media screen and (max-width: 500px) {
   .main-layout {
     display: grid;
-    grid-template-columns: minmax(0px, 0fr) minmax(auto, 1100px) minmax(
-        0px,
+    grid-template-columns: minmax(15px, 0fr) minmax(auto, 1100px) minmax(
+        15px,
         1fr
       );
 
     > * {
       grid-column: 2;
-
-      &.full {
-        // grid-column: 1 /-1;
-      }
     }
   }
 }

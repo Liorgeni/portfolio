@@ -14,11 +14,13 @@ html {
 }
 
 body {
+  height: 100vh;
   font-size: rem(16px);
   margin: 0;
   margin: auto;
   background-color: $clr1;
   color: $clr9;
+  overflow-x: hidden;
 }
 
 h1,
@@ -28,4 +30,28 @@ h4,
 h5,
 h6 {
   line-height: 1;
+}
+
+body.menu-open .main-screen {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.menu-toggle-btn {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .menu-toggle-btn {
+    display: inline;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: $clr1;
+    color: $clr5;
+    text-decoration: solid;
+    border-color: $clr1;
+  }
 }

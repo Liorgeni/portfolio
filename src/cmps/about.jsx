@@ -12,7 +12,10 @@ export function About() {
           consistently strive to give 100% effort in everything I do. Eager to
           evolve with a company that values innovation and teamwork, I am
           confident that I will make a positive impact and contribute to the
-          success of any team.
+          success of any team. In my free time you'll probably find me: playing
+          the guitar or the piano/ reading a book about the essence of life/
+          playing video games/ praticing my Muay Thai skills, or just baking a
+          cake.
         </p>{" "}
       </div>
     </section>

@@ -6,8 +6,13 @@
 }
 
 .intro {
-  gap: 320px;
-
+  .typed-cursor {
+    display: none;
+  }
+  // gap: 320px;
+  .intro-content {
+    max-width: 40%;
+  }
   .profile-img {
     height: 500px;
     align-self: flex-end;
@@ -35,6 +40,8 @@
     font-size: 18px;
     line-height: 1.5;
     margin: 0;
+    display: flex;
+    align-self: flex-end;
   }
 }
 /////////////////////////////////////////////////////
@@ -43,6 +50,21 @@
 .portfolio {
   background-color: $clr4;
   padding: 100px 0;
+
+  .portfolio-header {
+    justify-content: center;
+    align-items: flex-start;
+
+    a {
+      margin-left: 20px;
+
+      &:hover {
+        opacity: 80%;
+        background-color: $clr1;
+        border-radius: 25px;
+      }
+    }
+  }
 
   h1 {
     font-size: 48px;
@@ -119,8 +141,8 @@
     }
 
     /* Style the front side (fallback if image is missing) */
-    .flip-card-front {
-    }
+    // .flip-card-front {
+    // }
     /* Style the back side */
     .flip-card-back {
       background-color: $clr3;
@@ -177,12 +199,13 @@
     }
   }
   .CV-grid {
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: auto;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
-    gap: 20px;
+    gap: 70px;
     h4 {
       color: $clr6;
       font-family: Press;
@@ -208,6 +231,7 @@
   .CV-item {
     line-height: 1.5;
     gap: 35px;
+    align-items: flex-start;
   }
 }
 
@@ -232,6 +256,88 @@
 }
 
 @media screen and (max-width: 500px) {
-  .portfolio-grid {
+  .intro-container {
+    padding: 0;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .intro {
+    display: block;
+    .intro-headline {
+      gap: 20px;
+      align-items: center;
+    }
+    .intro-content {
+      display: initial;
+    }
+
+    .profile-img {
+      justify-content: center;
+      margin-top: 20px;
+      height: 320px;
+    }
+  }
+
+  .portfolio {
+    padding: 50px 0;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 30px;
+      justify-content: center;
+      p {
+        display: none;
+      }
+      .flip-card {
+        width: 150px;
+        height: 150px;
+
+        img {
+          max-width: 150px;
+        }
+      }
+
+      .flip-card-back {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+
+  .CV {
+    padding: 50px 0;
+
+    .skills {
+      flex-direction: column;
+    }
+
+    .CV-grid {
+      display: grid;
+      grid-template-columns: 350px;
+      grid-template-rows: auto;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      gap: 20px;
+
+      .CV-paragraph {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .about {
+    padding: 20px 0;
+
+    h2 {
+      text-align: center;
+    }
   }
 }
