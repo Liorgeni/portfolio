@@ -45,7 +45,7 @@ export function CV() {
               </p>
               <li>
                 JavaScript, TypeScript, React.js, Node.js Express.js, Redux.js,
-                Vue, Angular, Socket.IO, OOP
+                Axios, Vue, Angular, Socket.IO, OOP
               </li>
               <p>
                 <b>Databases</b>
