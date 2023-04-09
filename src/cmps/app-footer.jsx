@@ -8,7 +8,7 @@ export function AppFooter() {
     <footer className="app-footer main-layout full">
       <div className="footer-nav flex">
         <h1 className="flex">Contact me:</h1>
-        <div className="social-links flex grow">
+        <div className="social-links flex">
           <a
             href="https://www.linkedin.com/in/lior-geni-0897a7229/"
             target="_blank"

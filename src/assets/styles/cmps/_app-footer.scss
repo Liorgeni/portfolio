@@ -2,6 +2,7 @@
   background-color: $clr11;
   align-content: center;
   padding: 100px 0;
+
   .mail {
     font-size: 1.5rem;
   }
@@ -21,6 +22,7 @@
   }
 
   .footer-nav {
+    gap: 22px;
     justify-content: center;
     align-items: center;
     img {
@@ -53,6 +55,8 @@
   .app-footer .footer-nav {
     flex-direction: column;
     margin: 0 20px;
+    gap: 0px;
+
     .social-links {
       margin: 25px;
       width: 200px;
