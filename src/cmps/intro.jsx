@@ -4,7 +4,6 @@ import profile from "../assets/img/profile.jpeg";
 
 export function Intro() {
   const el = useRef(null);
-  const el2 = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {

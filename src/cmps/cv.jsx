@@ -77,7 +77,7 @@ export function CV() {
               <p>
                 <b> B.A Film and Television</b>
               </p>
-              <p>Institution: Tel-Aviv University Year</p>
+              <p>Institution: Tel-Aviv University</p>
               <p>
                 <i>Year of Graduation: 2021</i>
               </p>
@@ -100,6 +100,7 @@ export function CV() {
               <h4>Employment History</h4>
               <p>
                 Manager (January 2012 — present)
+                <br />
                 <small>
                   Over the years and through university, I worked in various
                   roles among them: Deputy Manager at NIKE store, and bar

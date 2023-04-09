@@ -21,13 +21,9 @@ export function AppFooter() {
           <a href="https://www.facebook.com/liorgeni/" target="_blank">
             <img src={facebook} alt="facebook" />
           </a>
-          {/* <a
-            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=liorgeni@gmail.com"
-            target="_blank"
-          >
-            <img src={gmail} alt="facebook" />
-          </a> */}
         </div>
+        <p className="mail">liorgeni@gmail.com</p>
+        <br />
         <p>Copyrights 2023. All Rights Reserved.</p>
       </div>
     </footer>
