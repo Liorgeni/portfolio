@@ -1,6 +1,6 @@
-import reactIcon from "../assets/img/react-icon.png";
-import mongoIcon from "../assets/img/mongodb-icon.png";
-import nodeIcon from "../assets/img/node-icon.png";
+// import reactIcon from "../assets/img/react-icon.png";
+// import mongoIcon from "../assets/img/mongodb-icon.png";
+// import nodeIcon from "../assets/img/node-icon.png";
 
 export function CV() {
   return (
@@ -35,6 +35,16 @@ export function CV() {
             </div>
           </article>
           <article className="CV-item flex align-center">
+            <div className=" CV-icon">
+              <span className="material-symbols-outlined">language</span>
+            </div>
+            <div className="CV-paragraph">
+              <h4>Languages</h4>
+              <p>Hebrew - Mother tongue</p>
+              <p> English - Fluent</p>
+            </div>
+          </article>
+          <article className="CV-item flex align-center">
             <div className="CV-icon">
               <span className="material-symbols-outlined">person_play</span>
             </div>
@@ -44,21 +54,21 @@ export function CV() {
                 <b>Skills</b>{" "}
               </p>
               <li>
-                JavaScript, TypeScript, React.js, Node.js Express.js, Redux.js,
-                Axios, Vue, Angular, Socket.IO, OOP
+                JavaScript, TypeScript, React.js, Node.js, Express, Vue,
+                Angular, Socket.io, OOP
               </li>
+              <p>
+                <b>FrontEnd Web Technologies:</b>
+              </p>
+              <li>CSS, SCSS ,Canvas, Three.js</li>
               <p>
                 <b>Databases</b>
               </p>
               <li> SQL (PostgreSQL), NoSQL (MongoDB)</li>
               <p>
-                <b>Front-end technologies</b>
-              </p>
-              <li>CSS, SCSS ,Canvas, Three.js</li>
-              <p>
                 <b>Tools</b>
               </p>
-              <li>Git, Trello</li>
+              <li>Git, Trello, Cloudflare, Render</li>
             </div>
           </article>
           <article className="CV-item flex align-center">
@@ -92,34 +102,7 @@ export function CV() {
               <li>Majoring: Songwriting and composing</li>
             </div>
           </article>
-          <article className="CV-item flex align-center">
-            <div className=" CV-icon">
-              <span className="material-symbols-outlined">badge</span>
-            </div>
-            <div className="CV-paragraph">
-              <h4>Employment History</h4>
-              <p>
-                Manager (January 2012 — present)
-                <br />
-                <small>
-                  Over the years and through university, I worked in various
-                  roles among them: Deputy Manager at NIKE store, and bar
-                  manager at "The Diner". (Got certificate of excellence in both
-                  of them)
-                </small>
-              </p>
-            </div>
-          </article>
-          <article className="CV-item flex align-center">
-            <div className=" CV-icon">
-              <span className="material-symbols-outlined">language</span>
-            </div>
-            <div className="CV-paragraph">
-              <h4>Language</h4>
-              <p>Hebrew - Mother tongue</p>
-              <p> English - Fluent</p>
-            </div>
-          </article>
+
           <article className="CV-item flex align-center">
             <div className=" CV-icon">
               <span className="material-symbols-outlined">menu_book</span>
@@ -156,6 +139,23 @@ export function CV() {
               <p>Cooking</p>
             </div>
           </article> */}
+
+          <article className="CV-item flex align-center">
+            <div className=" CV-icon">
+              <span className="material-symbols-outlined">badge</span>
+            </div>
+            <div className="CV-paragraph">
+              <h4>Employment History</h4>
+              <p>
+                (January 2012 — present)
+                <br />
+                Over the years and through university, I worked in various roles
+                among them: Deputy Manager at NIKE store, and bar manager at
+                "The Diner" (Got certificate of excellence in both of them). Now
+                i'm working as a bartender in a local bar at Givatayi'm.
+              </p>
+            </div>
+          </article>
         </section>
       </section>
     </section>

@@ -1,18 +1,34 @@
+import { useEffect } from "react";
 export function AppHeader({ toggleMenu }) {
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     console.log(window.scrollY);
+  //   }
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   function scrollToSection(section) {
     let scrollOffsetY;
+    const screenWidth = window.innerWidth;
+
     switch (section) {
       case "header":
         scrollOffsetY = 0;
         break;
       case "portfolio":
-        scrollOffsetY = 840;
+        scrollOffsetY = screenWidth < 500 ? 810 : 900;
         break;
       case "cv":
-        scrollOffsetY = 2500;
+        scrollOffsetY = screenWidth < 500 ? 2920 : 2350;
+        break;
+      case "about":
+        scrollOffsetY = screenWidth < 500 ? 5400 : 3950;
         break;
       case "bottom":
-        scrollOffsetY = 5000;
+        scrollOffsetY = 10000;
         break;
     }
 
@@ -37,7 +53,7 @@ export function AppHeader({ toggleMenu }) {
               <a onClick={() => scrollToSection("cv")}>CV</a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("bottom")}>About</a>
+              <a onClick={() => scrollToSection("about")}>About</a>
             </li>
             <li>
               <a onClick={() => scrollToSection("bottom")}>Contact me</a>

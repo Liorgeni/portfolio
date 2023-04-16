@@ -16,7 +16,6 @@ export function Intro() {
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
@@ -34,7 +33,7 @@ export function Intro() {
             </div>
             <div className="intro-text">
               <p>
-                31 years old from Tel-Aviv. I keep evolving every day. My dream
+                32 years old from Tel-Aviv. I keep evolving every day. My dream
                 is to change the world.
               </p>
             </div>
