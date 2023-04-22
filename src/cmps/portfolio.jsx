@@ -60,7 +60,7 @@ export function Portfolio() {
                 <button>Git</button>
               </a>
             </div>
-            <h4>Status: In progress (April 2023)</h4>
+            <h4>Created: March 2023</h4>
           </div>
         </article>
 
