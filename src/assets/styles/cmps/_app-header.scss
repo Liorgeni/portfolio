@@ -10,14 +10,14 @@
 
 .app-header {
   background-color: $clr6;
-  font-family: Livvic;
+  font-family: Press;
   width: 100%;
   position: sticky;
   z-index: 40;
   top: 0;
   .app-logo {
     margin-right: 40px;
-    font-size: 48px;
+    font-size: 34px;
     flex-grow: 1;
     h1 {
       cursor: pointer;
@@ -35,7 +35,7 @@
   a {
     margin-left: 60px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
 
     &:hover {
       color: $clr5;
@@ -53,6 +53,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .app-header {
+    height: 120px;
+    .app-logo {
+      font-size: 24px;
+    }
+  }
   .header-links {
     position: fixed;
     top: 0;
@@ -71,6 +77,7 @@
       margin: 0;
       padding: 30px 10px;
       border-bottom: 1px solid #ccc;
+      font-size: 15px;
 
       &:hover {
         background-color: #ccc;

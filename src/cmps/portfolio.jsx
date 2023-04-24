@@ -5,13 +5,14 @@ import touchnums from "../assets/img/touchnums.png";
 import pacman from "../assets/img/pacman.png";
 import memegen from "../assets/img/memegen.png";
 import mario from "../assets/img/superMario.png";
+import simon from "../assets/img/simon2.png";
 import github from "../assets/img/icon-github.svg";
 
 export function Portfolio() {
   return (
     <section className="portfolio main-layout full">
       <div className="portfolio-header flex">
-        <h1>Portfolio</h1>
+        <h2>Portfolio</h2>
         <a href=" https://github.com/Liorgeni/" target="_blank">
           <img src={github} />
         </a>
@@ -24,6 +25,29 @@ export function Portfolio() {
             <div>
               <h2>Gigxerr</h2>
               <h3>Tech: React, JS, NodeJs, MongoDB, SCSS, Express.js</h3>
+            </div>
+
+            <div className="card-links">
+              <a href="https://gigxerr.onrender.com" target="_blank">
+                <button>Open</button>
+              </a>
+              <a
+                href="https://github.com/ShaulGabrieli/sprint4/"
+                target="_blank"
+              >
+                <button>Git</button>
+              </a>
+            </div>
+            <h4>Created: February 2023</h4>
+          </div>
+        </article>
+
+        <article className="demo-card">
+          <img className="portfolio-img" src={simon} alt="gigxerr" />
+          <div className="card-text flex column">
+            <div>
+              <h2>Simon</h2>
+              <h3>Tech: React, Typescript, Node, SCSS, Express.js</h3>
             </div>
 
             <div className="card-links">

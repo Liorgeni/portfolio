@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 export function AppHeader({ toggleMenu }) {
-  // useEffect(() => {
-  //   function handleScroll() {
-  //     console.log(window.scrollY);
-  //   }
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    function handleScroll() {
+      console.log(window.scrollY);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   function scrollToSection(section) {
     let scrollOffsetY;
@@ -19,13 +19,13 @@ export function AppHeader({ toggleMenu }) {
         scrollOffsetY = 0;
         break;
       case "portfolio":
-        scrollOffsetY = screenWidth < 500 ? 810 : 900;
+        scrollOffsetY = screenWidth < 500 ? 750 : 870;
         break;
       case "cv":
-        scrollOffsetY = screenWidth < 500 ? 2920 : 2350;
+        scrollOffsetY = screenWidth < 500 ? 3160 : 2350;
         break;
       case "about":
-        scrollOffsetY = screenWidth < 500 ? 5400 : 3950;
+        scrollOffsetY = screenWidth < 500 ? 5900 : 4000;
         break;
       case "bottom":
         scrollOffsetY = 10000;
@@ -56,7 +56,7 @@ export function AppHeader({ toggleMenu }) {
               <a onClick={() => scrollToSection("about")}>About</a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("bottom")}>Contact me</a>
+              <a onClick={() => scrollToSection("bottom")}>Contact</a>
             </li>
           </ul>
           <button className="menu-toggle-btn" onClick={toggleMenu}>

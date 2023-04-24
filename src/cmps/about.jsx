@@ -8,7 +8,7 @@ export function About() {
   return (
     <section className="about main-layout full">
       <div className="about-content flex column space-between align-center">
-        <h2>A liitle more About me</h2>
+        <h1>A liitle more About me</h1>
         <p>
           Hi! My name is Lior, and I'm inlove with coding. I recently graduated
           from a Coding Academy Bootcamp where I gained experience developing
@@ -44,7 +44,7 @@ export function About() {
           Also, father to lulu:
           <br />
           <br />
-          <img className="asd" src={lulu} />
+          <img className="about-img" src={lulu} />
         </p>
       </div>
     </section>
