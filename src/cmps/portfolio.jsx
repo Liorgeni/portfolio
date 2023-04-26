@@ -51,13 +51,10 @@ export function Portfolio() {
             </div>
 
             <div className="card-links">
-              <a href="https://gigxerr.onrender.com" target="_blank">
+              <a href="https://simon-scfa.onrender.com/" target="_blank">
                 <button>Open</button>
               </a>
-              <a
-                href="https://github.com/ShaulGabrieli/sprint4/"
-                target="_blank"
-              >
+              <a href="https://github.com/Liorgeni/simons" target="_blank">
                 <button>Git</button>
               </a>
             </div>
